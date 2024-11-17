@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task3</title>
+</head>
+<body>
+    <header id="top">
+        <h1 style="color:red; text-align: center;">Task2</h1>
+    </header>
+    <main>
+        <section id="table">
+            <table border="1" cellpadding="10px">
+                <tr>
+                    <td>
+                        <p>this is paragraph one</p>
+                        <p>this is paragraph two</p>
+                    </td>
+                    <td>
+                        <img src="img/semantic elements.png" alt="semantic" width="90px">
+                    </td>
+                    <td>
+                        <iframe src="https://www.wikipedia.org/" frameborder="1" width="300" height="200"></iframe>
+                    </td>
+                        <td rowspan="2">
+                            <video src="video/L2.mp4" width="350px" controls loop muted poster="img/poster.webp"></video>
+                        </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <audio src="audio/gaber.m4a" controls></audio>
+                    </td>
+                </tr>
+            </table>
+        </section>
+        <br>
+        <hr>
+        <br>
+        <section id="form">
+            <form target="_blank" method="post">
+                <fieldset>
+                    <legend>Required</legend>
+                    <fieldset>
+                        <legend>About You</legend>
+                        <label for="first-name">First Name</label>
+                        <input type="text" id="first-name" required maxlength="10" minlength="4" placeholder="enter your first name">
+                        <br><br>
+                        <label for="last-name">Last Name</label>
+                        <input type="text" id="last-name" required maxlength="10" minlength="4" placeholder="enter your last name">
+                        <br><br>
+                        <label for="pass">Password</label>
+                        <input type="password" id="pass" name="pass1" required maxlength="15" minlength="10" placeholder="enter your password">
+                        <br><br>
+                        <label for="re-pass">Password again</label>
+                        <input type="password" id="re-pass" name="pass" required maxlength="15" minlength="10" placeholder="repeat your password">
+                        <br><br>
+                        <label for="file">Choose File (Photo)</label>
+                        <input type="file" id="file" accept=".png,.jpeg,.jpg,.gif,.bmp,webp" required>
+                    </fieldset>
+                    <br>
+                    <fieldset>
+                        <legend>Gender</legend>
+                        <input type="radio" id="male" name="gender" required>
+                        <label for="male">Male</label>
+                        <br>
+                        <input type="radio" id="female" name="gender" required>
+                        <label for="female">Female</label>
+                    </fieldset>
+                    <br>
+                    <label for="faculty">Faculty</label>
+                    <select id="faculty" name="facul" required>
+                        <option value="">--Select Faculty--</option>
+                        <option value="Artifical Intelligence">Artifical Intelligence</option>
+                        <option value="Computer Science">Computer Science</option>
+                        <option value="Commerce">Commerce</option>
+                        <option value="Law">Law</option>
+                        <option value="Agriculture">Agriculture</option>
+                        <option value="Science">Science</option>
+                        <option value="Medicine">Medicine</option>
+                        <option value="Dentistry">Dentistry</option>
+                        <option value="Nursing">Nursing</option>
+                    </select>
+                    <br><br>
+                    <fieldset>
+                        <legend>interested</legend>
+                        <input type="checkbox" name="interestes" id="programming">
+                        <label for="programming">Programming</label>
+                        <br>
+                        <input type="checkbox" name="interestes" id="graphic">
+                        <label for="graphic">Graphic Design</label>
+                        <br>
+                        <input type="checkbox" name="interestes" id="sports">
+                        <label for="sports">Sports</label>
+                        <br>
+                        <input type="checkbox" name="interestes" id="reading">
+                        <label for="reading">Reading</label>
+                    </fieldset>
+                    <br><br>
+                    <label for="about">About You</label>
+                    <textarea name="About" id="about" required></textarea>
+                    <br><br>
+                    <input type="submit" onclick="window.location.href='index2.html'">
+                    <input type="reset">
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    <br>
+    <hr>
+    <br>
+    <footer style="text-align: center;">
+        <a href="#top">Top</a>
+        <br>
+        <a href="#table">Table</a>
+        <br>
+        <a href="#form">Form</a>
+    </footer>
+</body>
+</html>
